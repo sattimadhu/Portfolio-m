@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import type { FC } from "react";
 import { motion } from "framer-motion";
 import { FiMail, FiLinkedin, FiGithub } from "react-icons/fi";
