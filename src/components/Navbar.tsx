@@ -34,7 +34,15 @@ const Navbar: React.FC = () => {
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-center items-center h-12">
+        <div className="flex justify-between items-center h-12">
+          {/* Logo */}
+          <Link 
+            to="/" 
+            className="text-3xl font-bold bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent"
+          >
+            Madhu
+          </Link>
+
           {/* Desktop Navigation */}
           <div className="hidden md:flex gap-8">
             {links.map((link) => (
@@ -91,9 +99,9 @@ const Navbar: React.FC = () => {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden mt-4 pb-4 bg-gray-900/95 backdrop-blur-md rounded-lg" // Added background and blur
+            className="md:hidden mt-4 pb-4 bg-gray-900/95 backdrop-blur-md rounded-lg"
           >
-            <div className="space-y-2 px-4 py-2"> {/* Added padding inside menu */}
+            <div className="space-y-2 px-4 py-2">
               {links.map((link) => (
                 <NavLink
                   key={link.name}

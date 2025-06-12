@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 import { Link } from "react-router-dom";
-
+import resume from "../resume_madhu.pdf"
 const Projects: React.FC = () => {
   const projects = [
   {
@@ -10,7 +10,7 @@ const Projects: React.FC = () => {
     year: "2025",
     desc: "A chatbot interface that allows users to upload PDFs and interact with their content using natural language queries powered by embeddings and LLMs.",
     tags: ["Python", "LangChain", "DeepSeek", "Streamlit", "PDF", "LLM"],
-    github: "#",
+    github: "https://github.com/sattimadhu/Chat-With-PDF-System.git",
     live: "#",
   },
   {
@@ -18,7 +18,7 @@ const Projects: React.FC = () => {
     year: "2025",
     desc: "An AI-powered IoT system that detects vehicle accidents using MPU6050 and sends real-time alerts via Twilio and Firebase.",
     tags: ["ESP8266", "MPU6050", "Firebase", "Twilio", "Python", "ML"],
-    github: "#",
+    github: "https://github.com/sattimadhu/Accident-Alert-System.git",
     live: "#",
   },
   {
@@ -26,7 +26,7 @@ const Projects: React.FC = () => {
   year: "2025",
   desc: "A modern personal portfolio website built with React, TypeScript, and Tailwind CSS featuring smooth animations, responsive design, and project showcase.",
   tags: ["React", "TypeScript", "Tailwind CSS", "Framer Motion", "Responsive Design"],
-  github: "#",
+  github: "https://github.com/sattimadhu/Portfolio-m.git",
   live: "#",
 },
   {
@@ -42,7 +42,7 @@ const Projects: React.FC = () => {
     year: "2025",
     desc: "Machine learning model to score and rank leads based on company data, revenue, and other business metrics.",
     tags: ["Python", "scikit-learn", "RandomForest", "MySQL","Streamlit"],
-    github: "#",
+    github: "https://github.com/sattimadhu/leads-scoring.git",
     live: "#",
   },
   {
@@ -50,7 +50,7 @@ const Projects: React.FC = () => {
     year: "2025",
     desc: "AR app using Unity and AR Foundation to display videos on image targets of the 7 Wonders of the World, one at a time.",
     tags: ["Unity", "AR Foundation", "C#", "Video Player", "Image Tracking"],
-    github: "#",
+    github: "https://github.com/sattimadhu/Marker-Based-Augmented-Reality-MultiImageTracking.git",
     live: "#",
   },
   {
@@ -58,15 +58,15 @@ const Projects: React.FC = () => {
     year: "2024",
     desc: "A web application that extracts dominant colors from uploaded images using k-means clustering, useful for design and branding.",
     tags: ["Python", "Flask", "OpenCV", "K-Means", "Color Picker", "HTML","CSS","JavaScript"],
-    github: "#",
+    github: "https://github.com/sattimadhu/Image_Colors_Extractor.git",
     live: "#",
   },
   {
     name: "Fake News Detector",
     year: "2023",
     desc: "A machine learning application that classifies news headlines or articles as real or fake using NLP techniques and a trained classifier.",
-    tags: ["Python", "NLP", "sklearn", "TF-IDF", "Flask", "Fake News","Spacy"],
-    github: "#",
+    tags: ["Python", "NLP", "sklearn", "TF-IDF", "Flask","Spacy"],
+    github: "https://github.com/sattimadhu/Fake-news-detection.git",
     live: "#",
   }
 ];
@@ -105,7 +105,7 @@ const Projects: React.FC = () => {
           {/* Changed to Link if this is an internal route, kept as anchor if it's a file download */}
           <motion.a
             variants={fadeIn}
-            href="/resume.pdf"
+            href={resume}
             download
             className="px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg font-medium hover:from-blue-600 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center gap-2"
           >
