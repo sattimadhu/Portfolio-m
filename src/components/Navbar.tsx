@@ -17,7 +17,6 @@ const Navbar: React.FC = () => {
 
   const links = [
     { name: "Home", href: "/" },
-    // { name: "About", href: "/about" },
     { name: "Resume", href: "/resume" },
     { name: "Projects", href: "/projects" },
     { name: "Contact", href: "/contact" },
@@ -30,19 +29,12 @@ const Navbar: React.FC = () => {
       transition={{ duration: 0.5 }}
       className={`fixed w-full z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-gray-900/90 backdrop-blur-md py-2 shadow-lg"
-          : "bg-transparent py-4"
+          ? "bg-gray-900/90 backdrop-blur-md py-4 shadow-lg"
+          : "bg-transparent py-6"
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-center items-center">
-          {/* <Link
-            to="/"
-            className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600"
-          >
-            Madhu.
-          </Link> */}
-
+        <div className="flex justify-center items-center h-12">
           {/* Desktop Navigation */}
           <div className="hidden md:flex gap-8">
             {links.map((link) => (
@@ -99,22 +91,24 @@ const Navbar: React.FC = () => {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden mt-4 space-y-2 pb-4"
+            className="md:hidden mt-4 pb-4 bg-gray-900/95 backdrop-blur-md rounded-lg" // Added background and blur
           >
-            {links.map((link) => (
-              <NavLink
-                key={link.name}
-                to={link.href}
-                className={({ isActive }) => 
-                  `block px-3 py-2 rounded-md text-gray-300 hover:text-white hover:bg-gray-800 transition-colors duration-300 ${
-                    isActive ? "text-white bg-gray-800" : ""
-                  }`
-                }
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                {link.name}
-              </NavLink>
-            ))}
+            <div className="space-y-2 px-4 py-2"> {/* Added padding inside menu */}
+              {links.map((link) => (
+                <NavLink
+                  key={link.name}
+                  to={link.href}
+                  className={({ isActive }) => 
+                    `block px-3 py-3 rounded-md text-gray-300 hover:text-white hover:bg-gray-800 transition-colors duration-300 ${
+                      isActive ? "text-white bg-gray-800" : ""
+                    }`
+                  }
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  {link.name}
+                </NavLink>
+              ))}
+            </div>
           </motion.div>
         )}
       </div>

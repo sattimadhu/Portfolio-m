@@ -84,7 +84,7 @@ const ResumeSection: React.FC = () => {
     <p className="text-sm text-gray-300">Sri Vasavi Engineering College</p>
     <p className="text-sm text-blue-400">2022 – 2026</p>
     <p className="text-gray-400 mt-2">
-      Pursuing a Bachelor's degree with a strong focus on electronics, embedded systems, and software development, particularly in AI and machine learning applications.
+      Pursuing a Bachelor's in Electronics with a focus on IoT, embedded systems, AI, and software development.
     </p>
   </div>
   <div className="relative pl-6 border-l border-gray-700 before:absolute before:w-3 before:h-3 before:rounded-full before:bg-blue-500 before:left-0 before:top-1.5 before:transform before:-translate-x-1/2">
@@ -92,7 +92,7 @@ const ResumeSection: React.FC = () => {
     <p className="text-sm text-gray-300">Sasi Junior College</p>
     <p className="text-sm text-blue-400">2020 – 2022</p>
     <p className="text-gray-400 mt-2">
-      Specialized in Mathematics, Physics, and Chemistry with electives in Computer Science, laying the foundation for a tech-driven academic path.
+      Specialized in Mathematics, Physics, and Chemistry.
     </p>
   </div>
 </div>
