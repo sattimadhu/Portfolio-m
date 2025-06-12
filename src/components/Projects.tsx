@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import resume from "../resume_madhu.pdf"
 const Projects: React.FC = () => {
   const projects = [
@@ -126,7 +126,7 @@ const Projects: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          {projects.map((project, index) => (
+          {projects.map((project, _) => (
             <motion.div
               key={project.name}
               variants={fadeIn}

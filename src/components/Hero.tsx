@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import profilePic from "../images/profile.png"; // Adjust this path to your actual profile image location
 
 const Hero: React.FC = () => {
